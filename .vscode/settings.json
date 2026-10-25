@@ -134,7 +134,7 @@
     "terminalCursor.foreground": "#c8d2ff",
     "terminal.foreground": "#c8d2ffd9",
     "editorLineNumber.foreground": "#c8d2ff0f",
-    "editorLineNumber.activeForeground": "#c8d2ff33",
+    "editorLineNumber.activeForeground": "#c8d2ff0f",
     "editorCodeLens.foreground": "#c8d2ff94",
     "sideBar.foreground": "#c8d2ffd9",
     "sideBarTitle.foreground": "#c8d2ff94",
