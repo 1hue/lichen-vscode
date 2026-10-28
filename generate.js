@@ -19,10 +19,21 @@ const lookup = (keyPath) =>
 		return value[key];
 	}, settings);
 
+/** Expand key list like `["*", "!.vscode/colors.json"]` - all settings minus keys of that file */
+const expandKeys = (entries) => {
+	const excluded = entries
+		.filter((e) => e.startsWith("!"))
+		.flatMap((e) => templates[e.slice(1)] ?? [e.slice(1)]);
+	return entries
+		.filter((e) => !e.startsWith("!"))
+		.flatMap((e) => (e === "*" ? Object.keys(settings) : [e]))
+		.filter((k) => !excluded.includes(k));
+};
+
 // Array lists setting keys, object maps fields to `#/` paths or literal values
 const fill = (template) =>
 	Array.isArray(template)
-		? Object.fromEntries(template.map((k) => [k, lookup(k)]))
+		? Object.fromEntries(expandKeys(template).map((k) => [k, lookup(k)]))
 		: Object.fromEntries(
 				Object.entries(template).map(([key, value]) => [
 					key,

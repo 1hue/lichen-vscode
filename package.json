@@ -62,18 +62,6 @@
       "editor.tokenColorCustomizations",
       "editor.semanticTokenColorCustomizations"
     ],
-    ".vscode/layout.json": [
-      "breadcrumbs.enabled",
-      "editor.glyphMargin",
-      "editor.renderLineHighlight",
-      "editor.stickyScroll.enabled",
-      "explorer.decorations.colors",
-      "workbench.editor.decorations.colors",
-      "workbench.experimental.modernUIEditorTabStyle",
-      "workbench.experimental.modernUIUppercaseViewHeaders",
-      "workbench.tree.enableStickyScroll",
-      "workbench.tree.indent",
-      "workbench.tree.renderIndentGuides"
-    ]
+    ".vscode/layout.json": ["*", "!.vscode/colors.json"]
   }
 }

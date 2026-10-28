@@ -1,19 +1,33 @@
 # Lichen - VS Code theme
 
-Lichen greens on near-black blue.
+Lichen greens on near-black blue. Less chaos.
 
 Syntax colors based on [Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme).
 
-## Install
+## Usage
 
-Search "Lichen" in Extensions, then pick it under `Preferences: Color Theme`.
+Search "Lichen" in Extensions.
 
-Or without extension: paste [settings.json](.vscode/settings.json) into `Ctrl+Shift+P` -> `Preferences: Open User Settings (JSON)` for the look in screenshots.
+### Manual
 
-To pick parts instead:
+You don't actually need to install anything if you don't want to.
 
-- [colors.json](.vscode/colors.json) - colors only
-- [layout.json](.vscode/layout.json) - tab style, tree indent, breadcrumbs and other layout bits
+Paste [settings.json](.vscode/settings.json) into `Ctrl+Shift+P` -> `Preferences: Open User Settings (JSON)` for the exact look in screenshots. Or pick what you like only:
+
+| File                                  |                                                    |
+| ------------------------------------- | -------------------------------------------------- |
+| [colors.json](.vscode/colors.json)    | Colors only                                        |
+| [layout.json](.vscode/layout.json)    | Tab style, tree indent, breadcrumbs and other bits |
+
+> [!NOTE]
+> Manual copy includes:
+>
+> ```json
+> "editor.fontFamily": "'JetBrains Mono', 'Google Sans Code', monospace",
+> "editor.fontSize": 12.5,
+> "editor.formatOnSave": true,
+> "window.zoomLevel": 0.2
+> ```
 
 ## License
 
