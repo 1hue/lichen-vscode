@@ -1,6 +1,6 @@
 # Lichen - VS Code theme
 
-<p align="center">Lichen greens on near-black blue. Less chaos.</p>
+<p align="center">Lichen greens on dark. Less chaos.</p>
 
 
 ## Usage
