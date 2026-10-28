@@ -1,4 +1,4 @@
-# Lichen - VS Code theme
+# Lichen Theme for VS Code
 
 <p align="center">Lichen greens on dark. Less chaos.</p>
 
