@@ -2,22 +2,26 @@
 
 Lichen greens on near-black blue. Less chaos.
 
-Syntax colors based on [Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme).
+<br>
 
 ## Usage
 
-Search "Lichen" in Extensions.
+Install "Lichen" directly in Extensions.
 
-### Manual
+### Manual copy
 
-You don't actually need to install anything if you don't want to.
+You don't actually need to install anything to get this theme look.
 
-Paste [settings.json](.vscode/settings.json) into `Ctrl+Shift+P` -> `Preferences: Open User Settings (JSON)` for the exact look in screenshots. Or pick what you like only:
+Paste [settings.json](.vscode/settings.json) into `Preferences: Open User Settings (JSON)` (`Ctrl+Shift+P`) for the exact look in screenshots.
+
+Or pick what you like only:
 
 | File                                  |                                                    |
 | ------------------------------------- | -------------------------------------------------- |
 | [colors.json](.vscode/colors.json)    | Colors only                                        |
 | [layout.json](.vscode/layout.json)    | Tab style, tree indent, breadcrumbs and other bits |
+
+<br>
 
 > [!NOTE]
 > Manual copy includes:
@@ -30,7 +34,9 @@ Paste [settings.json](.vscode/settings.json) into `Ctrl+Shift+P` -> `Preferences
 > ```
 > Make sure this is what you want.
 
+<br>
+
 ## License
 
 - [MIT](LICENSE)
-- Tokyo Night parts under their own [MIT license](LICENSE-tokyo-night)
+- Syntax colors based on [Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme) are under under their own [MIT license](LICENSE-tokyo-night)
