@@ -1,0 +1,9 @@
+.vscode/**
+.claude/**
+.git/**
+.gitignore
+.editorconfig
+build/**
+!build/lichen-color-theme.json
+Makefile
+generate.js

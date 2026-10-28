@@ -1,0 +1,73 @@
+{
+  "name": "lichen-theme",
+  "displayName": "Lichen",
+  "description": "Dark theme with lichen greens on near-black blue",
+  "version": "1.0.0",
+  "publisher": "1hue",
+  "author": {
+    "name": "1hue",
+    "url": "https://1hue.dev"
+  },
+  "license": "MIT",
+  "icon": "",
+  "galleryBanner": {
+    "color": "",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/1hue/lichen-vscode#readme",
+  "bugs": {
+    "url": "https://github.com/1hue/lichen-vscode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1hue/lichen-vscode"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "green"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Lichen",
+        "uiTheme": "vs-dark",
+        "path": "./build/lichen-color-theme.json"
+      }
+    ]
+  },
+  "generate": {
+    "build/lichen-color-theme.json": {
+      "name": "Lichen",
+      "type": "dark",
+      "semanticHighlighting": true,
+      "colors": "#/workbench.colorCustomizations",
+      "tokenColors": "#/editor.tokenColorCustomizations/textMateRules",
+      "semanticTokenColors": "#/editor.semanticTokenColorCustomizations/rules"
+    },
+    ".vscode/colors.json": [
+      "workbench.colorCustomizations",
+      "editor.tokenColorCustomizations",
+      "editor.semanticTokenColorCustomizations"
+    ],
+    ".vscode/layout.json": [
+      "breadcrumbs.enabled",
+      "editor.glyphMargin",
+      "editor.renderLineHighlight",
+      "editor.stickyScroll.enabled",
+      "explorer.decorations.colors",
+      "workbench.editor.decorations.colors",
+      "workbench.experimental.modernUIEditorTabStyle",
+      "workbench.experimental.modernUIUppercaseViewHeaders",
+      "workbench.tree.enableStickyScroll",
+      "workbench.tree.indent",
+      "workbench.tree.renderIndentGuides"
+    ]
+  }
+}

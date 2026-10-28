@@ -1,0 +1,13 @@
+{
+  "breadcrumbs.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.renderLineHighlight": "none",
+  "editor.stickyScroll.enabled": false,
+  "explorer.decorations.colors": false,
+  "workbench.editor.decorations.colors": false,
+  "workbench.experimental.modernUIEditorTabStyle": "pill",
+  "workbench.experimental.modernUIUppercaseViewHeaders": true,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always"
+}
