@@ -2,6 +2,7 @@
 .claude/**
 .git/**
 .gitignore
+.github/**
 .editorconfig
 build/**
 !build/lichen-color-theme.json

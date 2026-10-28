@@ -34,7 +34,8 @@
     "green"
   ],
   "devDependencies": {
-    "@vscode/vsce": "^4.0.0"
+    "@vscode/vsce": "^4.0.0",
+    "ovsx": "^1.3.0"
   },
   "overrides": {
     "@azure/msal-node": "^7.1.2"
@@ -62,6 +63,9 @@
       "editor.tokenColorCustomizations",
       "editor.semanticTokenColorCustomizations"
     ],
-    ".vscode/layout.json": ["*", "!.vscode/colors.json"]
+    ".vscode/layout.json": [
+      "*",
+      "!.vscode/colors.json"
+    ]
   }
 }
