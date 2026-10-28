@@ -9,6 +9,7 @@
     "url": "https://1hue.dev"
   },
   "license": "MIT",
+  "type": "module",
   "icon": "",
   "galleryBanner": {
     "color": "",
@@ -34,6 +35,7 @@
     "green"
   ],
   "devDependencies": {
+    "@types/node": "^26.6.5",
     "@vscode/vsce": "^4.0.0",
     "ovsx": "^1.3.0"
   },

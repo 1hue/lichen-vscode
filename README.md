@@ -28,6 +28,7 @@ Paste [settings.json](.vscode/settings.json) into `Ctrl+Shift+P` -> `Preferences
 > "editor.formatOnSave": true,
 > "window.zoomLevel": 0.2
 > ```
+> Make sure this is what you want.
 
 ## License
 

@@ -20,7 +20,7 @@ jobs:
       - run: npm audit
       # Version from release tag like v1.2.0
       - run: npm pkg set version="${GITHUB_REF_NAME#v}"
-      - run: node generate.js .vscode/settings.json
+      - run: node generate.ts .vscode/settings.json
       - run: npx vsce package --out build/lichen-theme.vsix
       - run: npx vsce publish --packagePath build/lichen-theme.vsix
         env:

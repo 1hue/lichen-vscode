@@ -1,23 +1,42 @@
-# Build theme in container
+# Development commands in containers
+.PHONY: generate build install setup sh clean
 
-image = docker.io/library/node:latest
-podman = podman run --rm --pull=newer --userns=keep-id -e HOME=/tmp -v .:/app:Z -w /app
-source = .vscode/settings.json
-out = build
+# Colors when run in terminal
+TTY := $(shell [ -t 0 ] && echo -t)
+RUN = podman run --rm -i $(TTY) -e TERM --pull=newer --userns=keep-id -e HOME=/tmp
+# No network
+RUN_OFFLINE = $(RUN) --network=none
+# Image with project mount
+NODE = -v .:/app:Z -w /app docker.io/library/node:latest
 
-.PHONY: generate build clean
+# VS Code CLI
+VSCODE ?= codium
+
+SOURCE = .vscode/settings.json
+VSIX = build/lichen-theme.vsix
 
 # Generate theme and settings parts from settings.json
 generate:
-	$(podman) --network=none $(image) node generate.js $(source)
+	$(RUN_OFFLINE) $(NODE) node generate.ts $(SOURCE)
 
 # Package theme as .vsix
-build: generate
-	$(podman) $(image) sh -c "\
-		cp package.json package-lock.json /tmp && \
-		npm ci --prefix /tmp --ignore-scripts && \
-		npm audit --prefix /tmp && \
-		/tmp/node_modules/.bin/vsce package --out $(out)/"
+build: generate | node_modules
+	$(RUN_OFFLINE) $(NODE) npx vsce package --out $(VSIX)
+
+install: build
+	$(VSCODE) --install-extension $(VSIX) --force
+
+# Install deps and audit
+setup:
+	$(RUN) $(NODE) sh -c 'npm ci --ignore-scripts && npm audit'
+
+# Install deps when missing
+node_modules:
+	$(MAKE) setup
+
+# Shell into container with colored ls and prompt
+sh:
+	$(RUN) $(NODE) bash --rcfile /etc/skel/.bashrc
 
 clean:
-	rm -rf $(out)
+	rm -rf build

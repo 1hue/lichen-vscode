@@ -8,4 +8,4 @@ build/**
 !build/lichen-color-theme.json
 Makefile
 package-lock.json
-generate.js
+generate.ts
