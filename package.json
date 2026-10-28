@@ -67,7 +67,8 @@
     ],
     ".vscode/layout.json": [
       "*",
-      "!.vscode/colors.json"
+      "!.vscode/colors.json",
+      "!workbench.colorTheme"
     ]
   }
 }
