@@ -1,7 +1,6 @@
-# Development commands in containers
 .PHONY: generate build install setup sh clean
 
-# Colors when run in terminal
+# Nice colours
 TTY := $(shell [ -t 0 ] && echo -t)
 RUN = podman run --rm -i $(TTY) -e TERM --pull=newer --userns=keep-id -e HOME=/tmp
 # No network
@@ -9,7 +8,7 @@ RUN_OFFLINE = $(RUN) --network=none
 # Image with project mount
 NODE = -v .:/app:Z -w /app docker.io/library/node:latest
 
-# VS Code CLI
+# Which VSCode binary
 VSCODE ?= codium
 
 SOURCE = .vscode/settings.json
@@ -34,7 +33,7 @@ setup:
 node_modules:
 	$(MAKE) setup
 
-# Shell into container with colored ls and prompt
+# Shell into container with Debian colours
 sh:
 	$(RUN) $(NODE) bash --rcfile /etc/skel/.bashrc
 
