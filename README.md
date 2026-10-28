@@ -24,7 +24,7 @@ Or pick what you like only:
 <br>
 
 > [!NOTE]
-> Manual copy includes:
+> Manual copy includes - make sure this is what you want:
 >
 > ```json
 > "editor.fontFamily": "'JetBrains Mono', 'Google Sans Code', monospace",
@@ -32,7 +32,6 @@ Or pick what you like only:
 > "editor.formatOnSave": true,
 > "window.zoomLevel": 0.2
 > ```
-> Make sure this is what you want.
 
 <br>
 
