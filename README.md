@@ -2,10 +2,16 @@
 
 <p align="center">Lichen greens on dark. Less chaos.</p>
 
+![Source control and output panel](assets/screenshot_1.png)
+
+![Explorer and problems panel](assets/screenshot_2.png)
 
 ## Usage
 
 Install "Lichen" directly in Extensions.
+
+> [!TIP]
+> Extension only sets colours. For the look in screenshots, also paste [layout.json](.vscode/layout.json) into `Preferences: Open User Settings (JSON)`.
 
 ### Manual copy
 

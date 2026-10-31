@@ -9,3 +9,5 @@ build/**
 Makefile
 package-lock.json
 generate.ts
+showcase/**
+assets/**
