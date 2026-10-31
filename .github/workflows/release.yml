@@ -20,7 +20,7 @@ jobs:
       - run: npm pkg set version="${GITHUB_REF_NAME#v}"
       - run: node generate.ts .vscode/settings.json
       - run: npx vsce package --out build/lichen-theme.vsix
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: vsix
           path: build/lichen-theme.vsix
@@ -32,7 +32,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: vsix
       - run: gh release upload "$GITHUB_REF_NAME" lichen-theme.vsix --repo "$GITHUB_REPOSITORY"
@@ -52,7 +52,7 @@ jobs:
         with:
           node-version: latest
       - run: npm ci --ignore-scripts
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: vsix
       - run: npx ovsx publish lichen-theme.vsix --trusted-publishing
