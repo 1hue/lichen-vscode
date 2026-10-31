@@ -43,6 +43,9 @@ jobs:
     name: Publish to Open VSX
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -52,6 +55,4 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: vsix
-      - run: npx ovsx publish lichen-theme.vsix
-        env:
-          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+      - run: npx ovsx publish lichen-theme.vsix --trusted-publishing
