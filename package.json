@@ -10,9 +10,9 @@
   },
   "license": "MIT",
   "type": "module",
-  "icon": "",
+  "icon": "assets/icon.png",
   "galleryBanner": {
-    "color": "",
+    "color": "#84DCC6",
     "theme": "dark"
   },
   "homepage": "https://github.com/1hue/lichen-vscode#readme",

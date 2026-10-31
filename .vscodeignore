@@ -11,3 +11,4 @@ package-lock.json
 generate.ts
 showcase/**
 assets/**
+!assets/icon.png
