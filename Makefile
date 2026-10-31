@@ -1,4 +1,4 @@
-.PHONY: generate build install setup sh clean
+.PHONY: generate build install setup deps sh clean
 
 # Colours when run in terminal - vsce never exits with terminal attached
 COLOR := $(shell [ -t 0 ] && echo --env=FORCE_COLOR=1)
@@ -28,6 +28,10 @@ install: build
 # Install deps and audit
 setup:
 	$(RUN) $(NODE) sh -c 'npm ci --ignore-scripts && npm audit'
+
+# Fix vulnerable deps
+audit:
+	$(RUN) $(NODE) sh -c 'npm audit fix --ignore-scripts; npm audit'
 
 # Install deps when missing
 node_modules:

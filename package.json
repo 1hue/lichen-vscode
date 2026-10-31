@@ -2,7 +2,7 @@
   "name": "lichen-theme",
   "displayName": "Lichen",
   "description": "Dark theme with lichen greens on near-black blue",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "publisher": "1hue",
   "author": {
     "name": "1hue",
@@ -40,7 +40,8 @@
     "ovsx": "^1.3.0"
   },
   "overrides": {
-    "@azure/msal-node": "^7.1.2"
+    "@azure/msal-node": "^7.1.2",
+    "minimatch": "^11.0.1"
   },
   "contributes": {
     "themes": [
