@@ -1,8 +1,8 @@
 .PHONY: generate build install setup sh clean
 
-# Nice colours
-TTY := $(shell [ -t 0 ] && echo -t)
-RUN = podman run --rm -i $(TTY) -e TERM --pull=newer --userns=keep-id -e HOME=/tmp
+# Colours when run in terminal - vsce never exits with terminal attached
+COLOR := $(shell [ -t 0 ] && echo --env=FORCE_COLOR=1)
+RUN = podman run --rm $(COLOR) -e TERM --pull=newer --userns=keep-id -e HOME=/tmp
 # No network
 RUN_OFFLINE = $(RUN) --network=none
 # Image with project mount
@@ -20,7 +20,7 @@ generate:
 
 # Package theme as .vsix
 build: generate | node_modules
-	$(RUN_OFFLINE) $(NODE) npx vsce package --out $(VSIX)
+	$(RUN_OFFLINE) $(NODE) node_modules/.bin/vsce package --out $(VSIX)
 
 install: build
 	$(VSCODE) --install-extension $(VSIX) --force
@@ -35,7 +35,7 @@ node_modules:
 
 # Shell into container with Debian colours
 sh:
-	$(RUN) $(NODE) bash --rcfile /etc/skel/.bashrc
+	$(RUN) -it $(NODE) bash --rcfile /etc/skel/.bashrc
 
 clean:
 	rm -rf build
