@@ -38,9 +38,3 @@ Or pick what you like only:
 > "editor.formatOnSave": true,
 > "window.zoomLevel": 0.2
 > ```
-
-<br>
-
-## License
-
-- [MIT](LICENSE)
