@@ -11,13 +11,11 @@
 Install "Lichen" directly in Extensions.
 
 > [!TIP]
-> Extension only sets colours. For the look in screenshots, also paste [layout.json](.vscode/layout.json) into `Preferences: Open User Settings (JSON)`.
+> Extension only sets colours. For the look in screenshots, also copy [layout.json](.vscode/layout.json) into your settings.
 
 ### Manual copy
 
-You don't actually need to install anything, if you prefer.
-
-Paste [settings.json](.vscode/settings.json) into `Preferences: Open User Settings (JSON)` (`Ctrl+Shift+P`) for the exact look in screenshots.
+Paste [settings.json](.vscode/settings.json) into `Preferences: Open User Settings (JSON)` (`Ctrl+Shift+P`).
 
 Or pick what you like only:
 
@@ -44,4 +42,3 @@ Or pick what you like only:
 ## License
 
 - [MIT](LICENSE)
-- Syntax colours based on [Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme) are under under their own [MIT license](LICENSE-tokyo-night)
