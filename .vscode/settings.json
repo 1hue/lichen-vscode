@@ -91,6 +91,8 @@
     "editorBracketHighlight.foreground4": "#214f4b",
     "editorBracketHighlight.foreground5": "#214f4b",
     "editorBracketHighlight.foreground6": "#214f4b",
+    "editorBracketMatch.background": "#00000000",
+    "editorBracketMatch.border": "#00000000",
     "editorCodeLens.foreground": "#c8d2ff94",
     "editorCommentsWidget.rangeActiveBackground": "#9cb7c940",
     "editorCommentsWidget.rangeBackground": "#9cb7c926",

@@ -10,6 +10,7 @@
   "editor.fontSize": 12.5,
   "editor.formatOnSave": true,
   "editor.glyphMargin": false,
+  "editor.matchBrackets": "never",
   "editor.renderLineHighlight": "none",
   "editor.stickyScroll.enabled": false,
   "explorer.confirmDelete": false,
