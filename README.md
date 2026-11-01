@@ -2,9 +2,11 @@
 
 <p align="center">Lichen greens on dark. Less chaos.</p>
 
-![Source control and output panel](assets/screenshot_1.png)
+![Lichen VS Code theme editor screenshot #1](assets/screenshot_1.png)
 
-![Explorer and problems panel](assets/screenshot_2.png)
+![Lichen VS Code theme editor screenshot #2](assets/screenshot_2.png)
+
+![Lichen VS Code theme editor screenshot #3](assets/screenshot_3.png)
 
 ## Usage
 
