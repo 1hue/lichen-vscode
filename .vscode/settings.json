@@ -389,21 +389,14 @@
       },
       {
         "name": "Built-in objects and classes",
-        "scope": [
-          "support.class",
-          "support.constant",
-          "support.variable"
-        ],
+        "scope": ["support.class", "support.constant", "support.variable"],
         "settings": {
           "foreground": "#42D5B1"
         }
       },
       {
         "name": "Property declarations",
-        "scope": [
-          "meta.object-literal.key",
-          "support.type.property-name"
-        ],
+        "scope": ["meta.object-literal.key", "support.type.property-name"],
         "settings": {
           "foreground": "#96FCE2"
         }
@@ -461,22 +454,14 @@
       },
       {
         "name": "Modifiers like private, readonly, get and set",
-        "scope": [
-          "variable.language",
-          "storage.modifier",
-          "storage.type.property"
-        ],
+        "scope": ["variable.language", "storage.modifier", "storage.type.property"],
         "settings": {
           "foreground": "#3F98AA"
         }
       },
       {
         "name": "Errors and deletions",
-        "scope": [
-          "markup.deleted",
-          "invalid",
-          "log.error"
-        ],
+        "scope": ["markup.deleted", "invalid", "log.error"],
         "settings": {
           "foreground": "#EC41AD"
         }
@@ -548,20 +533,14 @@
       },
       {
         "name": "Markup styles",
-        "scope": [
-          "markup.bold",
-          "markup.heading"
-        ],
+        "scope": ["markup.bold", "markup.heading"],
         "settings": {
           "fontStyle": "bold"
         }
       },
       {
         "name": "Markup italic",
-        "scope": [
-          "markup.italic",
-          "markup.quote"
-        ],
+        "scope": ["markup.italic", "markup.quote"],
         "settings": {
           "fontStyle": "italic"
         }
