@@ -60,7 +60,11 @@
     "debugView.valueChangedHighlight": "#9cb7c966",
     "descriptionForeground": "#c8d2ff94",
     "diffEditor.diagonalFill": "#8b99c026",
+    "diffEditor.insertedLineBackground": "#73daca14",
+    "diffEditor.insertedTextBackground": "#73daca26",
     "diffEditor.move.border": "#8b99c080",
+    "diffEditor.removedLineBackground": "#ec41ad14",
+    "diffEditor.removedTextBackground": "#ec41ad26",
     "disabledForeground": "#c8d2ff66",
     "dropdown.background": "#8b99c00d",
     "dropdown.border": "#00000000",
@@ -339,7 +343,7 @@
           "punctuation.definition.string"
         ],
         "settings": {
-          "foreground": "#2D5D7B"
+          "foreground": "#4A7F9F"
         }
       },
       {
@@ -513,7 +517,7 @@
           "keyword.codetag.notation"
         ],
         "settings": {
-          "foreground": "#2D5D7B"
+          "foreground": "#4A7F9F"
         }
       },
       {
