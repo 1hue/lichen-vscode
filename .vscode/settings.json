@@ -45,6 +45,7 @@
     "commandCenter.activeForeground": "#c8d2ffd9",
     "commandCenter.background": "#05060a",
     "commandCenter.border": "#00000000",
+    "commandCenter.foreground": "#84dcc6",
     "debugIcon.breakpointDisabledForeground": "#c8d2ff66",
     "debugIcon.breakpointUnverifiedForeground": "#c8d2ff66",
     "debugIcon.continueForeground": "#9cb7c9",
