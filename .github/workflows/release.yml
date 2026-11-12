@@ -56,3 +56,20 @@ jobs:
         with:
           name: vsix
       - run: npx ovsx publish lichen-theme.vsix --trusted-publishing
+
+  marketplace:
+    name: Publish to VS Code Marketplace
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/setup-node@v7
+        with:
+          node-version: latest
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: vsix
+
+      - run: npx --yes @vscode/vsce publish --packagePath *.vsix --oidc
